@@ -1,0 +1,311 @@
+@import "tailwindcss";
+/* =========================================
+   AURA WOMEN - MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+
+  /* ---------- NAVBAR ---------- */
+
+  header nav {
+    padding: 12px 16px !important;
+  }
+
+  header nav > div:last-child {
+    gap: 10px !important;
+  }
+
+  header .tracking-\[0\.25em\] {
+    letter-spacing: 0.12em !important;
+    font-size: 8px !important;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* Logo */
+  header .text-2xl {
+    font-size: 20px !important;
+  }
+
+  /* Mobile menu */
+  header .md\:hidden {
+    display: flex;
+  }
+
+  /* ---------- SEARCH ---------- */
+
+  header input {
+    font-size: 12px !important;
+  }
+
+  /* ---------- HERO ---------- */
+
+  section.relative.h-\[85vh\] {
+    min-height: 620px;
+    height: 78vh;
+  }
+
+  section.relative.h-\[85vh\] > div.relative {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  section.relative.h-\[85vh\] h1 {
+    font-size: 42px !important;
+    line-height: 1.08 !important;
+  }
+
+  section.relative.h-\[85vh\] p {
+    font-size: 12px !important;
+    line-height: 1.8 !important;
+  }
+
+  section.relative.h-\[85vh\] button {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 18px !important;
+  }
+
+  /* ---------- CATEGORY SECTION ---------- */
+
+  section.py-20 {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  section.py-20 h2 {
+    font-size: 30px !important;
+  }
+
+  section.py-20 .grid {
+    gap: 16px !important;
+  }
+
+  section.py-20 .grid > div {
+    height: 330px !important;
+  }
+
+  /* ---------- PRODUCTS PAGE ---------- */
+
+  .max-w-7xl {
+    max-width: 100% !important;
+  }
+
+  .max-w-7xl.mx-auto {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Product heading */
+  .min-h-screen h1 {
+    font-size: 30px !important;
+    line-height: 1.2;
+  }
+
+  /* Filters */
+  .min-h-screen .grid {
+    gap: 20px !important;
+  }
+
+  /* Product cards */
+  .min-h-screen .grid img {
+    max-width: 100%;
+  }
+
+  /* Product image height */
+  .min-h-screen .h-80 {
+    height: 360px !important;
+  }
+
+  /* ---------- PRODUCT DETAILS ---------- */
+
+  .h-\[550px\] {
+    height: 440px !important;
+  }
+
+  .max-w-6xl {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .max-w-6xl h1 {
+    font-size: 28px !important;
+  }
+
+  /* Size buttons */
+  .max-w-6xl .flex.gap-3 {
+    flex-wrap: wrap;
+  }
+
+  .max-w-6xl .flex.gap-3 button {
+    min-width: 55px;
+  }
+
+  /* ---------- CONTACT PAGE ---------- */
+
+  .max-w-5xl {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .max-w-5xl h1 {
+    font-size: 32px !important;
+  }
+
+  /* Contact form name/email */
+  .max-w-5xl form .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .max-w-5xl form input,
+  .max-w-5xl form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ---------- CART ---------- */
+
+  .max-w-6xl {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ---------- CHECKOUT ---------- */
+
+  .max-w-4xl {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .max-w-4xl form .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .max-w-4xl h1 {
+    font-size: 30px !important;
+  }
+
+  /* ---------- WISHLIST DRAWER ---------- */
+
+  .fixed.inset-0 .max-w-md {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding-top: 50px !important;
+    padding-bottom: 25px !important;
+  }
+
+  footer .grid {
+    gap: 35px !important;
+  }
+
+  footer .flex.gap-6 {
+    gap: 18px !important;
+  }
+
+  /* ---------- BUTTONS ---------- */
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Prevent text from overflowing */
+  h1,
+  h2,
+  h3,
+  p,
+  span {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE - 480px
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  /* Announcement bar */
+  header .bg-slate-950 {
+    font-size: 7px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  /* Navbar */
+  header nav {
+    padding: 10px 12px !important;
+  }
+
+  header nav > div:last-child {
+    gap: 6px !important;
+  }
+
+  header nav svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  /* Hero */
+  section.relative.h-\[85vh\] {
+    min-height: 570px;
+  }
+
+  section.relative.h-\[85vh\] h1 {
+    font-size: 35px !important;
+  }
+
+  section.relative.h-\[85vh\] p {
+    font-size: 11px !important;
+  }
+
+  /* Categories */
+  section.py-20 h2 {
+    font-size: 27px !important;
+  }
+
+  section.py-20 .grid > div {
+    height: 300px !important;
+  }
+
+  /* Products */
+  .min-h-screen .h-80 {
+    height: 330px !important;
+  }
+
+  /* Product details */
+  .h-\[550px\] {
+    height: 390px !important;
+  }
+
+  /* Wishlist */
+  .fixed.inset-0 .max-w-md {
+    padding: 16px !important;
+  }
+
+  /* Footer */
+  footer .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
